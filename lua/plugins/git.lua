@@ -1,11 +1,8 @@
 return {
 	{
-		"NeogitOrg/neogit",
-		dependencies = {
-			"nvim-lua/plenary.nvim", -- required
-			"sindrets/diffview.nvim", -- optional - Diff integration
-			"ibhagwan/fzf-lua", -- optional
+		"kdheepak/lazygit.nvim",
+		keys = {
+			{ "<leader>g", "<cmd>LazyGit<cr>", desc = "Git" },
 		},
-		config = true,
 	},
 }

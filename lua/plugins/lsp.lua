@@ -14,7 +14,7 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {
-			{ "williamboman/mason.nvim", config = true },
+			{ "williamboman/mason.nvim", opts = {} },
 			"williamboman/mason-lspconfig.nvim",
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 			"hrsh7th/cmp-nvim-lsp",
@@ -31,6 +31,7 @@ return {
 					"autopep8",
 					"black",
 					"shfmt",
+					-- TODO: add yaml and xml LSP
 				},
 			})
 			local lspconfig_defaults = require("lspconfig").util.default_config

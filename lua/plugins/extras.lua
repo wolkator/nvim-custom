@@ -1,13 +1,40 @@
 return {
 	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		opts = {},
+		keys = {
+			{ "<leader>st", "<cmd>TodoFzfLua<cr>", desc = "Todo" },
+		},
+	},
+	{
+		"folke/persistence.nvim",
+		event = "BufReadPre", -- this will only start session saving when an actual file was opened
+		opts = {},
+		keys = {
+			{
+				"<leader>ls",
+				function()
+					require("persistence").select()
+				end,
+				desc = "Load session",
+			},
+		},
+	},
+	{
+		"echasnovski/mini.statusline",
+		version = false,
+		opts = {},
+	},
+	{
 		"echasnovski/mini.ai",
 		version = false,
-		config = true,
+		opts = {},
 	},
 	{
 		"echasnovski/mini.surround",
 		version = false,
-		config = true,
+		opts = {},
 	},
 	{
 		"echasnovski/mini.move",
@@ -28,6 +55,7 @@ return {
 			spec = {
 				{ "<leader>s", group = "Search" },
 				{ "<leader>c", group = "Code action" },
+				{ "<leader>l", group = "Load session" },
 				{ "<leader>r", group = "Rename" },
 				{ "<leader>x", group = "Diagnostic" },
 			},

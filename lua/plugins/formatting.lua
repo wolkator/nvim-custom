@@ -1,5 +1,4 @@
 return {
-	-- "tpope/vim-sleuth",
 	{
 		"stevearc/conform.nvim",
 		opts = {
@@ -15,6 +14,10 @@ return {
 				lua = { "stylua" },
 				python = { "autopep8", "black" },
 				shell = { "shfmt" },
+				-- TODO: add yaml and xml formatters
+			},
+			formatters = {
+				["clang-format"] = { prepend_args = { "--style=Microsoft" } },
 			},
 		},
 	},

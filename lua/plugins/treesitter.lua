@@ -4,7 +4,7 @@ return {
 		build = ":TSUpdate",
 		main = "nvim-treesitter.configs",
 		opts = {
-			ensure_installed = { "c", "cpp", "lua", "python", "vim", "vimdoc", "query" },
+			ensure_installed = { "bash", "c", "cpp", "lua", "python", "regex", "vim", "vimdoc", "query", "xml", "yaml" },
 			sync_install = false,
 			auto_install = true,
 			highlight = {

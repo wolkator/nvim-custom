@@ -1,3 +1,5 @@
+Colorscheme = "torte"
+
 -- Options, commands and autocommands not related to plugins
 require("config.options")
 

@@ -1,4 +1,4 @@
-Colorscheme = "torte"
+Colorscheme = "vim"
 
 -- Options, commands and autocommands not related to plugins
 require("config.options")

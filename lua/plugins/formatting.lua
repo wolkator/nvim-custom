@@ -14,7 +14,8 @@ return {
 				lua = { "stylua" },
 				python = { "autopep8", "black" },
 				shell = { "shfmt" },
-				-- TODO: add yaml and xml formatters
+				xml = { "xmlformatter" },
+				yaml = { "yamlfmt" },
 			},
 			formatters = {
 				["clang-format"] = { prepend_args = { "--style=Microsoft" } },

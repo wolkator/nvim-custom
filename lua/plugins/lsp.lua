@@ -31,7 +31,10 @@ return {
 					"autopep8",
 					"black",
 					"shfmt",
-					-- TODO: add yaml and xml LSP
+					"lemminx",
+					"xmlformatter",
+					"circleci-yaml-language-server",
+					"yamlfmt",
 				},
 			})
 			local lspconfig_defaults = require("lspconfig").util.default_config

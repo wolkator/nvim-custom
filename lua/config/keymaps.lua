@@ -9,8 +9,14 @@ vim.keymap.set("n", "<c-j>", "<cmd>wincmd j<cr>", { desc = "Focus bottom window"
 vim.keymap.set("n", "<c-k>", "<cmd>wincmd k<cr>", { desc = "Focus top window" })
 vim.keymap.set("n", "<c-l>", "<cmd>wincmd l<cr>", { desc = "Focus right window" })
 
+-- Tabs
+vim.keymap.set("n", "<leader>tn", "<cmd>tabnew<cr>", { desc = "New" })
+vim.keymap.set("n", "<leader>tc", "<cmd>tabclose<cr>", { desc = "Close" })
+vim.keymap.set("n", "<tab>", "<cmd>tabnext<cr>", { desc = "Next" })
+vim.keymap.set("n", "<s-tab>", "<cmd>tabprevious<cr>", { desc = "Previous" })
+
 -- Terminal
-vim.keymap.set("n", "<leader>t", "<cmd>terminal<cr>", { desc = "Terminal" })
+vim.keymap.set("n", "<leader>\\", "<cmd>terminal<cr>", { desc = "Terminal" })
 vim.keymap.set("t", "<c-h>", "<c-\\><c-n><c-w>h", { desc = "Focus left window" })
 vim.keymap.set("t", "<c-j>", "<c-\\><c-n><c-w>j", { desc = "Focus bottom window" })
 vim.keymap.set("t", "<c-k>", "<c-\\><c-n><c-w>k", { desc = "Focus top window" })

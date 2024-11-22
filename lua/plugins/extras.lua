@@ -1,4 +1,5 @@
 return {
+	"tpope/vim-sleuth",
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
@@ -57,6 +58,7 @@ return {
 				{ "<leader>c", group = "Code action" },
 				{ "<leader>l", group = "Load session" },
 				{ "<leader>r", group = "Rename" },
+				{ "<leader>t", group = "Tab" },
 				{ "<leader>x", group = "Diagnostic" },
 			},
 		},
